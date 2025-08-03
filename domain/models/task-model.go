@@ -13,7 +13,7 @@ type Task struct {
 
 func NewTask(task Task) Task {
 	return Task{
-		Id:          uuid.New().String(),
+		Id:          uuid.NewString(),
 		Name:        task.Name,
 		Description: task.Description,
 	}
